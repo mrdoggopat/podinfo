@@ -21,7 +21,6 @@ spec:
       labels:
         app: podinfo
     spec:
-      replicas: 3
       containers:
       - name: podinfod
         image: ghcr.io/stefanprodan/podinfo:6.15.0
@@ -68,7 +67,7 @@ spec:
           timeoutSeconds: 5
         resources:
           limits:
-            cpu: 2000m
+            cpu: 1000m
             memory: 512Mi
           requests:
             cpu: 100m
